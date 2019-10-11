@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Nonton Film</string>
+        <string name="movies">Film</string>
+        <string name="tv_shows">Serial Tv</string>
+        <string name="favorite">Favorit</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+    <string name="backdrop_movie">Backdrop Movie</string>
+        <string name="title_movies">Judul Film</string>
+        <string name="popularity">Popularitas</string>
+    <string name="cast_image">Foto Cast</string>
+        <string name="name">Nama</string>
+        <string name="role">Peran</string>
+    <string name="genre">Genre</string>
+        <string name="overview">Overview</string>
+        <string name="image_favorite">Image Favorite</string>
+        <string name="detail_genre">detail genre</string>
+        <string name="cast">Cast</string>
+        <string name="empty_movie">Film Kosong</string>
+        <string name="empty_tv_show">Serial Tv Kosong</string>
+        <string name="change">Ubah</string>
+        <string name="change_language">Ubah Bahasa</string>
+        <string name="search">Cari</string>
+        <string name="AddFav">Tambah ke Favorit</string>
+        <string name="removeFav">Hapus dari Favorit</string>
+    <string name="settings">Pengaturan</string>
+        <string name="cancel">Batal</string>
+        <string name="en">Inggris</string>
+        <string name="in">Indonesia</string>
+    <string name="press_exit">Tekan lagi untuk Keluar</string>
+    <string name="please_check_your_connection">Periksa koneksi Anda</string>
+    <string name="gradient">Gradient</string>
+    <string name="search_movie">Cari Film</string>
+    <string name="icon_daily_reminder">Icon Daily Reminder</string>
+        <string name="daily_description">Anda akan mendapatkan notifikasi untuk melihat aplikasi Watch The Movie setiap jam 7 pagi</string>
+        <string name="daily_reminder">Pengingat harian</string>
+        <string name="release_reminder">Pengingat rilis film</string>
+        <string name="release_desc">Anda akan mendapatkan notifikasi film rilis di hari tertentu di jam 8 pagi</string>
+    <string name="language">Bahasa</string>
+    <string name="today_release">Pengingat rilis film harian</string>
+    <string name="has_release">telah rilis hari ini</string>
+    <string name="no_release">Tidak ada film yang rilis hari ini</string>
+    <string name="empty">Kosong</string>
+    <string name="search_Tv">Cari serial Tv</string>
+    <string name="daily_mgs">Coba lihat film favorit anda disini</string>
+    <string name="reminder_release">Pengingat rilis film</string>
+
+
+</resources>

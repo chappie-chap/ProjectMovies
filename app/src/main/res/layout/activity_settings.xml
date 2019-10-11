@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/change_lang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/change"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_lang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_lang"
+            app:srcCompat="@drawable/ic_translate" />
+
+        <TextView
+            android:id="@+id/txt_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/change_language"
+            app:layout_constraintStart_toEndOf="@+id/img_lang"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/language"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_lang"
+            app:layout_constraintTop_toBottomOf="@+id/txt_lang" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_lang" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/stg_dailyReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_lang">
+
+        <ImageView
+            android:id="@+id/stg_imgDaily"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/icon_daily_reminder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/stg_dailyTitle"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_notifications_off" />
+
+        <TextView
+            android:id="@+id/stg_dailyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/daily_reminder"
+            app:layout_constraintStart_toEndOf="@+id/stg_imgDaily"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/daily_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/switch_daily"
+            app:layout_constraintStart_toStartOf="@+id/stg_dailyTitle"
+            app:layout_constraintTop_toBottomOf="@+id/stg_dailyTitle" />
+
+        <Switch
+            android:id="@+id/switch_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/stg_dailyTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/stg_dailyTitle" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stg_dailyReminder" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/stg_todayReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5">
+
+        <ImageView
+            android:id="@+id/stg_todayDaily"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/icon_daily_reminder"
+            app:layout_constraintBottom_toBottomOf="@+id/stg_todayTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/stg_todayTitle"
+            app:srcCompat="@drawable/ic_notifications_off" />
+
+        <TextView
+            android:id="@+id/stg_todayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/release_reminder"
+            app:layout_constraintStart_toEndOf="@+id/stg_todayDaily"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/release_desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/switch_today"
+            app:layout_constraintStart_toStartOf="@+id/stg_todayTitle"
+            app:layout_constraintTop_toBottomOf="@+id/stg_todayTitle" />
+
+        <Switch
+            android:id="@+id/switch_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/stg_todayTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/stg_todayTitle" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stg_todayReminder" />
+</android.support.constraint.ConstraintLayout>
